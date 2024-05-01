@@ -1,0 +1,8 @@
+echo Write prettier
+npm run format
+echo Check prettier
+npm run format:check
+echo Type checking
+npm run typecheck
+echo Git add all changes
+git add -A .

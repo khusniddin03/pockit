@@ -1,0 +1,45 @@
+.digital {
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 40px;
+  }
+
+  &__bottom {
+    margin: 40px 0 20px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--slate-grey);
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3% - 13.4px));
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.digital-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 18px 0 32px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 20px;
+  background-color: var(--white);
+
+  &__img {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__title {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

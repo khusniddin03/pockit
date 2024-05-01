@@ -13,4 +13,22 @@ interface IFaqAccardionItem {
   content: React.ReactNode;
 }
 
-export type { IFooterItem, IFooterDataItem, IFaqAccardionItem };
+interface ISupportCardItem {
+  image: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+interface IDigitalCardItem {
+  title: string;
+  image: string;
+}
+
+export type {
+  IFooterItem,
+  IFooterDataItem,
+  IFaqAccardionItem,
+  ISupportCardItem,
+  IDigitalCardItem,
+};

@@ -1,0 +1,73 @@
+.hero {
+  padding: 60px 0 40px 0;
+  display: flex;
+  justify-content: center;
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__left-img {
+    width: 320px;
+    height: 265px;
+  }
+  &__right-img {
+    width: 353px;
+    height: 430px;
+  }
+
+  &__title {
+    color: var(--black);
+    text-align: center;
+    font-weight: 700;
+    font-size: 52px;
+    max-width: 670px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  &__item {
+    font-size: 18px;
+    color: var(--black);
+  }
+
+  &__logos {
+    margin-top: 40px;
+  }
+
+  &__apply {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__download-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__download-link {
+    width: 94px;
+    height: 28px;
+  }
+
+  &__bottom {
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--black);
+    font-style: italic;
+  }
+}
