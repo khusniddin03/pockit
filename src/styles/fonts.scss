@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gt walsheim web";
-  src: url("../assets/fonts/GTWalsheimPro-Regular.woff") format("woff");
+  src: url("@/assets/fonts/GTWalsheimPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Gt walsheim web";
-  src: url("../assets/fonts/GTWalsheimPro-Medium.woff") format("woff");
+  src: url("@/assets/fonts/GTWalsheimPro-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Gt walsheim web";
-  src: url("../assets/fonts/GTWalsheimPro-Bold.woff") format("woff");
+  src: url("@/assets/fonts/GTWalsheimPro-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Gt walsheim web";
-  src: url("../assets/fonts/GTWalsheimPro-Black.woff") format("woff");
+  src: url("@/assets/fonts/GTWalsheimPro-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;

@@ -1,0 +1,56 @@
+@import "@/styles/mixins.scss";
+
+.navbar {
+  @include tablet {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item {
+    color: var(--link-color);
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    svg {
+      transition: stroke 0.3s;
+    }
+  }
+
+  &__link {
+    padding: 20px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--blue);
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+
+    &:hover ~ .navbar-sublist {
+      opacity: 1;
+      pointer-events: all;
+      transition: all 0.3s;
+    }
+
+    &:hover + .navbar__icon {
+      svg {
+        stroke: var(--blue) !important;
+      }
+    }
+  }
+}

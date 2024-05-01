@@ -1,3 +1,5 @@
+@import "@/styles/mixins.scss";
+
 .support {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -22,5 +24,13 @@
     grid-template-columns: repeat(3, calc(33.3% - 20px));
     justify-content: space-between;
     gap: 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

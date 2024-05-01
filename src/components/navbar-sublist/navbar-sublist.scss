@@ -1,0 +1,40 @@
+.navbar-sublist {
+  position: absolute;
+  top: 100%;
+  border-radius: 12px;
+  background: #fff;
+  left: 0;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 5%);
+  min-width: 220px;
+  box-sizing: border-box;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 11;
+  transition: opacity 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &:hover {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.3s;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 16px;
+    color: var(--link-color);
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--blue);
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+  }
+}

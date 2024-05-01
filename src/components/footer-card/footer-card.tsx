@@ -17,11 +17,15 @@ export default function FooterCard(): React.ReactElement {
       </div>
       <div className="footer-card__links">
         <Link to="/">
-          <img className="footer-card__code" src={appStore} alt="footer-card" />
+          <img
+            className="footer-card__store"
+            src={appStore}
+            alt="footer-card"
+          />
         </Link>
         <Link to="/">
           <img
-            className="footer-card__code"
+            className="footer-card__store"
             src={googlePlay}
             alt="footer-card"
           />

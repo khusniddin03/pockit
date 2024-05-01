@@ -34,6 +34,12 @@ interface IDiscoverCardItem {
   subtext: string;
 }
 
+interface INavItem {
+  path: string;
+  label: string;
+  children?: INavItem[];
+}
+
 export type {
   IFooterItem,
   IFooterDataItem,
@@ -41,4 +47,5 @@ export type {
   ISupportCardItem,
   IDigitalCardItem,
   IDiscoverCardItem,
+  INavItem,
 };

@@ -1,3 +1,5 @@
+@import "@/styles/mixins.scss";
+
 .customers {
   padding: 40px 0;
 
@@ -6,6 +8,12 @@
     height: 265px;
     display: block;
     margin: 0 auto;
+
+    @include mobile {
+      margin: 0 auto;
+      width: 120px;
+      height: 100px;
+    }
   }
 
   &__title {
@@ -14,6 +22,13 @@
     text-align: center;
     font-weight: 700;
     font-size: 36px;
+
+    @include mobile {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 26px;
+      max-width: 340px;
+    }
   }
 
   &__list {
@@ -21,6 +36,11 @@
     justify-content: center;
     column-gap: 20px;
     row-gap: 10px;
+
+    @include tablet-small {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -28,8 +48,29 @@
     color: var(--black);
   }
 
+  &__item-img {
+    width: 83px;
+    height: 32px;
+  }
+
   &__logos {
     margin-top: 40px;
+
+    @include tablet-small {
+      flex-direction: row;
+    }
+
+    @include mobile-small {
+      column-gap: 0;
+
+      .customers__item {
+        width: 50%;
+        text-align: center;
+      }
+
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
 
   &__apply {

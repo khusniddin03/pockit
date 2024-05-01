@@ -1,3 +1,5 @@
+@import "@/styles/mixins.scss";
+
 .footer-card {
   max-width: 80%;
   grid-column-gap: 20px;
@@ -10,6 +12,15 @@
   padding: 20px;
   display: flex;
   box-shadow: 0 18px 32px rgba(0, 0, 0, 0.1);
+
+  @include tablet-small {
+    max-width: 100%;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__description {
     flex-flow: column;
@@ -24,6 +35,10 @@
     font-weight: 500;
     line-height: 33px;
     margin-bottom: 10px;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -32,6 +47,11 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+
+    @include mobile {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 
   &__img {
@@ -39,6 +59,11 @@
     height: 157px;
     position: relative;
     top: 10px;
+
+    @include mobile {
+      width: 128px;
+      height: 107px;
+    }
   }
 
   &__links {
@@ -47,9 +72,22 @@
     justify-content: center;
     gap: 10px;
 
+    @include mobile {
+      flex-direction: row;
+    }
+
     img {
       width: 94px;
       height: 28px;
+    }
+  }
+
+  &__code {
+    width: 124px;
+    height: 157px;
+
+    @include mobile {
+      display: none;
     }
   }
 }
