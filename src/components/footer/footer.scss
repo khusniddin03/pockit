@@ -1,0 +1,57 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 230px;
+  background-color: var(--footer-bg);
+  background-image: url("../../assets/imgs/Rocket-45.png");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 200px;
+
+  &__container {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
+
+  // &__top {}
+
+  &__top-text {
+    color: var(--grey);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+
+    a {
+      color: var(--blue);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__top-link {
+    color: var(--grey);
+    word-break: normal;
+    overflow-wrap: break-word;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 400;
+
+    &:last-child {
+      margin-top: 20px;
+      display: block;
+    }
+  }
+
+  &__copy {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

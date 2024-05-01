@@ -1,0 +1,55 @@
+.footer-card {
+  max-width: 80%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.1);
+
+  &__description {
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+  }
+
+  &__title {
+    color: var(--white-2);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    max-width: 250px;
+    color: var(--white-2);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__img {
+    width: 187px;
+    height: 157px;
+    position: relative;
+    top: 10px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+      width: 94px;
+      height: 28px;
+    }
+  }
+}

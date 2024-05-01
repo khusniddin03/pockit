@@ -1,0 +1,67 @@
+.faq-accardion-item {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 18px;
+  padding: 10px 20px;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.1);
+
+  &__button {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--black);
+  }
+
+  &__icon {
+    color: var(--dark-grey);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    display: grid;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    grid-template-rows: 0fr;
+    opacity: 0;
+
+    &.open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+
+    .content {
+      overflow: hidden;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+
+      .text {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__divider {
+    background-color: var(--pockit-yellow);
+    border-radius: 99px;
+    width: 30px;
+    height: 6px;
+    margin-bottom: 20px;
+  }
+}

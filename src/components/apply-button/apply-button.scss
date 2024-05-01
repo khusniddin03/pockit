@@ -1,0 +1,18 @@
+.apply-button {
+  background-color: var(--pockit-yellow);
+  outline: none;
+  padding: 9px 20px;
+  border: 1px solid var(--black);
+  color: var(--black);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    color: var(--pockit-yellow);
+    background-color: var(--black);
+  }
+}

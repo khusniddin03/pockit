@@ -1,0 +1,27 @@
+.footer-item {
+  &__title {
+    color: var(--pockit-yellow);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // &__item {}
+
+  &__link {
+    color: var(--white);
+    text-decoration: underline;
+    line-height: 36px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
