@@ -1,4 +1,5 @@
 import Container from "../container/container";
+import DigitalCard from "../digital-card/digital-card";
 import { DIGITAL_DATA } from "./digital-data";
 import "./digital.scss";
 
@@ -8,15 +9,8 @@ export default function Digital(): React.ReactElement {
       <Container>
         <h3 className="digital__title">A digital account made for everyone</h3>
         <div className="digital__list">
-          {DIGITAL_DATA.map((digital) => (
-            <div className="digital-card">
-              <img
-                src={digital?.image}
-                alt="digital-card-img"
-                className="digital-card__img"
-              />
-              <p className="digital-card__title">{digital?.title}</p>
-            </div>
+          {DIGITAL_DATA.map((digital, index) => (
+            <DigitalCard key={index} {...digital} />
           ))}
         </div>
         <p className="digital__bottom">

@@ -25,10 +25,20 @@ interface IDigitalCardItem {
   image: string;
 }
 
+interface IDiscoverCardItem {
+  type: "orange" | "green" | "purple" | "blue";
+  title: string;
+  icon: string;
+  list: Pick<IDigitalCardItem, "title">[];
+  link: string;
+  subtext: string;
+}
+
 export type {
   IFooterItem,
   IFooterDataItem,
   IFaqAccardionItem,
   ISupportCardItem,
   IDigitalCardItem,
+  IDiscoverCardItem,
 };

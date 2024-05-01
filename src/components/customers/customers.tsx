@@ -4,7 +4,7 @@ import logo1 from "@/assets/imgs/number_of_customers.svg";
 import logo2 from "@/assets/imgs/card_payment_2.svg";
 import logo3 from "@/assets/imgs/spectator_1.svg";
 import logo4 from "@/assets/imgs/bbc_black.svg";
-import Button from "../button/button";
+import ButtonLink from "../button-link/button-link";
 import { Link } from "react-router-dom";
 import appStore from "@/assets/imgs/download-on-the-app-store-apple-logo-svgrepo-com-1.svg";
 import googlePlay from "@/assets/imgs/google-play-badge-logo-svgrepo-com-1.svg";
@@ -52,7 +52,7 @@ export default function Customers(): React.ReactElement {
           </li>
         </ul>
         <div className="customers__apply">
-          <Button>Apply now</Button>
+          <ButtonLink to="/">Apply now</ButtonLink>
           <div className="customers__download-links">
             <Link to="/">
               <img

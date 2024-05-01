@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../logo/logo";
 import "./header.scss";
-import ApplyButton from "../apply-button/apply-button";
-import LoginButton from "../login-button/login-button";
+import LoginLink from "../login-link/login-link";
+import ApplyLink from "../apply-link/apply-link";
 
 export default function Header(): React.ReactElement {
   return (
@@ -53,8 +53,8 @@ export default function Header(): React.ReactElement {
           </div>
 
           <div className="header__right">
-            <ApplyButton>Apply now</ApplyButton>
-            <LoginButton>Login</LoginButton>
+            <ApplyLink to="/">Apply now</ApplyLink>
+            <LoginLink to="/">Login</LoginLink>
           </div>
         </div>
       </div>

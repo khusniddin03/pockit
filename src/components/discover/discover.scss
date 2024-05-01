@@ -1,0 +1,35 @@
+.discover {
+  padding: 40px 0;
+  overflow: hidden;
+
+  &__title {
+    color: var(--black);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__swiper {
+    overflow: visible !important;
+    margin: 0 auto;
+    max-width: 1450px;
+  }
+
+  &__swiper-item {
+    height: 580px !important;
+  }
+
+  &__bottom-text {
+    margin: 30px 0 20px 0;
+    color: var(--slate-grey);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+
+    &.mt-20 {
+      margin-top: 20px;
+    }
+  }
+}
