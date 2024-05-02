@@ -48,7 +48,7 @@ export default function ClientsList(): React.ReactElement {
               spaceBetween: 30,
             },
             1280: {
-              slidesPerView: 5,
+              slidesPerView: 4,
               spaceBetween: 30,
             },
           }}
