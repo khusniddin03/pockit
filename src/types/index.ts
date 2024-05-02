@@ -40,6 +40,13 @@ interface INavItem {
   children?: INavItem[];
 }
 
+interface IClientCardItem {
+  image: string;
+  message: string;
+  name: string;
+  date: string;
+}
+
 export type {
   IFooterItem,
   IFooterDataItem,
@@ -48,4 +55,5 @@ export type {
   IDigitalCardItem,
   IDiscoverCardItem,
   INavItem,
+  IClientCardItem,
 };

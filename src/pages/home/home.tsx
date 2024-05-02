@@ -8,6 +8,7 @@ import Customers from "@/components/customers/customers";
 import Hero from "@/components/hero/hero";
 import Digital from "@/components/digital/digital";
 import Discover from "@/components/discover/discover";
+import Clients from "@/components/clients/clients";
 
 export default function Home(): React.ReactElement {
   return (
@@ -17,6 +18,7 @@ export default function Home(): React.ReactElement {
         <Hero />
         <Discover />
         <Digital />
+        <Clients />
         <Customers />
         <Support />
         <Faq />

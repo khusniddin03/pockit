@@ -1,0 +1,85 @@
+@import "@/styles/mixins.scss";
+
+.clients-list {
+  overflow-x: hidden;
+
+  &__wrap {
+    margin: 0 auto;
+    max-width: 1530px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include tablet {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include mobile {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__swiper {
+    overflow: visible !important;
+
+    .swiper-pagination {
+      position: absolute;
+      top: -70px !important;
+      left: 50% !important;
+      bottom: 100% !important;
+      transform: translateX(-50%);
+      width: 100%;
+
+      .swiper-pagination-bullet-active {
+        background-color: var(--black);
+      }
+    }
+  }
+
+  &__swiper-item {
+    margin-bottom: 60px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    gap: 520px;
+    margin-bottom: 40px;
+
+    @include mobile {
+      width: 100%;
+      justify-content: space-between;
+      gap: 0;
+      padding: 0 16px;
+    }
+  }
+
+  &__next-btn,
+  &__prev-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid var(--black);
+    transform-origin: center;
+    position: relative;
+    z-index: 8;
+
+    svg {
+      transform: rotate(90deg);
+      width: 30px;
+      height: 30px;
+      stroke-width: 2px !important;
+    }
+  }
+
+  &__next-btn {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+}

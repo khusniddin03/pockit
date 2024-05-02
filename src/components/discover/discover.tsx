@@ -5,9 +5,6 @@ import { Pagination } from "swiper/modules";
 import { DISCOVER_DATA } from "./discover-data";
 import DiscoverCard from "../discover-card/discover-card";
 
-import "swiper/css";
-import "swiper/css/pagination";
-
 export default function Discover(): React.ReactElement {
   return (
     <section className="discover">
