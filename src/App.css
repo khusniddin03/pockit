@@ -12,6 +12,10 @@ body {
   background-color: var(--white-2);
 }
 
+body[data-scroll-disable="true"] {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   display: inline-block;

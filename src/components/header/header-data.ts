@@ -3,11 +3,11 @@ import type { INavItem } from "@/types";
 const NAVBAR_ITEMS: INavItem[] = [
   {
     label: "Card",
-    path: "/",
+    path: "/card",
     children: [
       {
         label: "Card for everyday use →",
-        path: "/",
+        path: "/test",
       },
       {
         label: "Card for travel →",
