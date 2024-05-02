@@ -87,19 +87,22 @@
   &__icon {
     position: absolute;
     top: 0;
+    right: 0;
     height: 51px;
-    width: 40px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     cursor: pointer;
+    background-color: red;
 
     @include tablet {
-      right: 20px;
+      width: 60px;
+      padding-right: 20px;
     }
 
     @include mobile {
-      right: 16px;
+      width: 56px;
+      padding-right: 16px;
     }
 
     svg {
