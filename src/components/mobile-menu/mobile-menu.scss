@@ -11,7 +11,11 @@
   opacity: 0;
   z-index: 8;
   transition: opacity 0.3s;
-  display: block;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
 
   &.active {
     pointer-events: all;
@@ -125,6 +129,19 @@
 
     @include mobile {
       padding: 15px 40px 15px 28pxpx;
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    gap: 20px;
+
+    @include tablet {
+      padding: 0 20px 20px 20px;
+    }
+
+    @include mobile {
+      padding: 0 16px 20px 16px;
     }
   }
 }

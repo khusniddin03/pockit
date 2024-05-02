@@ -6,7 +6,7 @@ interface IProps {
   target?: "_blank" | "_parent" | "_self" | "_top";
 }
 
-export default function LoginButton(
+export default function LoginLink(
   props: React.PropsWithChildren<IProps>,
 ): React.ReactElement {
   const { children, to, target } = props;

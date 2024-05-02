@@ -1,5 +1,4 @@
 import { INavItem } from "@/types";
-import "./mobile-nav-item.scss";
 import { Link } from "react-router-dom";
 import ArrowDown from "../arrow-down/arrow-down";
 import { useState } from "react";
